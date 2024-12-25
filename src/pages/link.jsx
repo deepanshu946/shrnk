@@ -76,11 +76,11 @@ const LinkPage = () => {
             {url?.title}
           </span>
           <a
-            href={`https://shrnkit.netlify.app/${link}`}
+            href={`https://shrnk/${link}`}
             target="_blank"
             className="text-3xl sm:text-4xl text-blue-400 font-bold hover:underline cursor-pointer"
           >
-            https://shrnkit.netlify.app/{link}
+            https://shrnk/{link}
           </a>
           <a
             href={url?.original_url}
@@ -97,7 +97,7 @@ const LinkPage = () => {
             <Button
               variant="ghost"
               onClick={() =>
-                navigator.clipboard.writeText(`https://shrnkit.netlify.app/${link}`)
+                navigator.clipboard.writeText(`https://shrnk/${link}`)
               }
             >
               <Copy />
